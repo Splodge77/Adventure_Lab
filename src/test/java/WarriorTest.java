@@ -35,6 +35,10 @@ public class WarriorTest {
 
     @Test
     public void alisonAttackEric(){
+        int healthValue = eric.getHP();
         alison.inflictDamage(eric);
+        int hitValue = alison.getWeapon().getHitValue();
+        int newHealthValue = healthValue - hitValue;
+        assertEquals(newHealthValue, eric.getHP());
     }
 }
