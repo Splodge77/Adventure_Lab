@@ -4,8 +4,8 @@ import Behaviours.IDamageable;
 
 public abstract class Player implements IDamageable {
 
-    String username;
-    int hp;
+    private String username;
+    private int hp;
 
     public Player(String username, int hp){
         this.username = username;
@@ -16,8 +16,13 @@ public abstract class Player implements IDamageable {
         return this.username;
     }
 
-    public void takeDamage(int damage){
-        this.hp -= damage;
+    public int getHP() {
+        return this.hp;
     }
+
+    public void setHP(int hp) {
+        this.hp = hp;
+    }
+
 
 }

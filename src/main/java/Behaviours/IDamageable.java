@@ -2,5 +2,5 @@ package Behaviours;
 
 public interface IDamageable {
 
-    void takeDamage();
+    void takeDamage(int damage);
 }

@@ -7,7 +7,7 @@ public class Cleric extends Player {
     private HealingTool tool;
 
     public Cleric(String username, HealingTool tool) {
-        super(username);
+        super(username, 215);
         this.tool = tool;
     }
 
@@ -18,4 +18,10 @@ public class Cleric extends Player {
     public void setHealingTool(HealingTool tool) {
         this.tool = tool;
     }
+
+
+    public void takeDamage(int damage) {
+
+    }
 }
+

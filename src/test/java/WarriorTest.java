@@ -32,4 +32,9 @@ public class WarriorTest {
         zsolt.setWeapon(Weapon.SWORD);
         assertEquals(Weapon.SWORD, zsolt.getWeapon());
     }
+
+    @Test
+    public void alisonAttackEric(){
+        alison.inflictDamage(eric);
+    }
 }

@@ -1,7 +1,9 @@
 package Player.Warrior;
+import Behaviours.IAttack;
+import Behaviours.IDamageable;
 import Player.Player;
 
-public abstract class Warrior extends Player{
+public abstract class Warrior extends Player implements IAttack {
 
     Weapon weapon;
 
@@ -18,4 +20,16 @@ public abstract class Warrior extends Player{
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
+
+
+    public void inflictDamage(IDamageable character) {
+        character.takeDamage(this.weapon.getHitValue());
+
+    }
+
+    public void takeDamage(int damage) {
+        setHP(getHP() - damage);
+
+    }
+
 }

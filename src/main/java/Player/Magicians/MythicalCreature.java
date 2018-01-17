@@ -1,5 +1,8 @@
 package Player.Magicians;
 
+import Behaviours.IAttack;
+import Behaviours.IDamageable;
+
 public enum MythicalCreature {
 
     DRAGON(100, 700),
@@ -7,7 +10,7 @@ public enum MythicalCreature {
     UNICORN(250, 25);
 
     private final int hitValue;
-    private final int healthValue;
+    private int healthValue;
 
     MythicalCreature(int hitValue, int healthValue) {
         this.hitValue = hitValue;
