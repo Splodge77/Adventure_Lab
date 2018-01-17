@@ -4,14 +4,18 @@ import Player.Player;
 public abstract class Warrior extends Player{
 
     Weapon weapon;
-    int hp;
 
-    public Warrior(String name, Weapon weapon, int healthPoints) {
-        super(name);
+    public Warrior(String name, Weapon weapon, int hp) {
+        super(name, hp);
         this.weapon = weapon;
-        this.hp = healthPoints;
     }
 
 
+    public Weapon getWeapon() {
+        return this.weapon;
+    }
 
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
 }

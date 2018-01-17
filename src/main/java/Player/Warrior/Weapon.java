@@ -2,8 +2,6 @@ package Player.Warrior;
 
 public enum Weapon {
 
-
-
     CROSSBOW(20),
     CLUB(10),
     SWORD(25);
