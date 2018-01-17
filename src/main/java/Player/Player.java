@@ -1,6 +1,7 @@
 package Player;
 
 import Behaviours.IDamageable;
+import Room.Treasure;
 
 public abstract class Player implements IDamageable {
 

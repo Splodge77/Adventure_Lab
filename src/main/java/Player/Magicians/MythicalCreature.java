@@ -5,24 +5,18 @@ import Behaviours.IDamageable;
 
 public enum MythicalCreature {
 
-    DRAGON(100, 700),
-    OGRE(40, 600),
-    UNICORN(250, 25);
+    DRAGON(100),
+    OGRE(40),
+    UNICORN(250);
 
     private final int hitValue;
-    private int healthValue;
 
-    MythicalCreature(int hitValue, int healthValue) {
+    MythicalCreature(int hitValue) {
         this.hitValue = hitValue;
-        this.healthValue = healthValue;
     }
 
     public int getHitValue(){
         return this.hitValue;
-    }
-
-    public int getHealthValue(){
-        return this.healthValue;
     }
 
 }

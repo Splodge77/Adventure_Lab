@@ -24,12 +24,10 @@ public abstract class Warrior extends Player implements IAttack {
 
     public void inflictDamage(IDamageable character) {
         character.takeDamage(this.weapon.getHitValue());
-
     }
 
     public void takeDamage(int damage) {
         setHP(getHP() - damage);
-
     }
 
 }

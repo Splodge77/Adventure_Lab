@@ -32,13 +32,20 @@ public abstract class Magician extends Player implements IAttack {
         this.creature = creature;
     }
 
+    public void inflictDamage(IDamageable character){
+        character.takeDamage(this.spell.getHitValue());
+    }
 
-    public void inflictDamage(IDamageable character) {
+    public void spellInflictsDamage(IDamageable character) {
+        character.takeDamage(this.spell.getHitValue());
+    }
 
+    public void creatureInflictsDamage(IDamageable character) {
+        character.takeDamage(this.creature.getHitValue());
     }
 
     public void takeDamage(int damage) {
-
+        setHP(getHP() - damage);
     }
 }
 
